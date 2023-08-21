@@ -1,0 +1,52 @@
+
+# API 1 --- GET all states
+GET http://localhost:5050/states/
+####
+
+// API 2 --- GET specific state
+GET http://localhost:5050/states/10/
+####
+
+// API 3 --- POST a new state
+POST http://localhost:5050/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+####
+
+// API 4 --- specific district
+GET http://localhost:5050/districts/10/
+####
+
+// API 5 --- delete a specific district
+DELETE http://localhost:5050/districts/13/
+###
+
+// API 6 --- update a specific district
+PUT http://localhost:5050/districts/15/
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+// API 7 --- GET stats of specific state
+GET http://localhost:5050/states/5/stats/
+####
+
+// API 8 --- GET stats of all states
+GET http://localhost:5050/districts/5/details/
+####
