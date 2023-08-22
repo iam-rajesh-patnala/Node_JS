@@ -1,0 +1,25 @@
+GET http://127.0.0.1:5050/todos/?status=TO%20DO
+###
+
+GET http://127.0.0.1:5050/todos/5/
+###
+
+POST http://127.0.0.1:5050/todos/
+Content-Type: application/json
+
+{
+  "id": 12,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+###
+
+PUT http://127.0.0.1:5050/todos/12
+Content-Type: application/json
+
+{ "todo": "Some task" }
+
+###
+DELETE http://127.0.0.1:5050/todos/12
+###

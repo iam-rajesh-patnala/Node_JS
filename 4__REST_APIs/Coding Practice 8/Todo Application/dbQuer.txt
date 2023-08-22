@@ -1,0 +1,8 @@
+------------- HOW TO CREATE A TABLE -------------
+
+CREATE TABLE todo (id NOT NULL PRIMARY KEY, todo TEXT, priority TEXT, status TEXT);
+
+------------- HOW TO INSERT DATA INTO A TABLE -------------
+
+INSERT INTO todo (id, todo, priority, status) VALUES (1, "Drink Water", "HIGH", "DONE"), (2, "Buy Eggs", "LOW", "TO DO");
+
