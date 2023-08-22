@@ -31,7 +31,8 @@ initializeDBAndServer();
 // Get All books API
 
 app.get('/books/', async (request, response) => {
-  const SQLQuery = `SELECT * FROM book ORDER BY book_id;`;
+  const {offset=1, limit=5, search_q="", order_by = "book_id", order="ASC"} = request.query;
+  const SQLQuery = `SELECT * FROM book WHERE title LIKE '%${search_q}%' ORDER BY ${order_by} ${order} LIMIT ${limit} OFFSET ${offset};`;
   const result = await db.all(SQLQuery);
   response.send(result);
 })

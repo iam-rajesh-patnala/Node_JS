@@ -54,3 +54,6 @@ DELETE http://localhost:2020/books/3/
 
 // Get author books
 GET  http://localhost:2020/authors/6/books/
+###
+
+GET http://localhost:2020/books/?offset=1&limit=10&order=desc
