@@ -1,0 +1,31 @@
+// API 1 --- GET  list of all the players 
+GET http://127.0.0.1:5050/players/
+###
+
+// API 2 --- GET  specific player based on the player ID
+GET http://127.0.0.1:5050/players/5/
+###
+
+// API 3 --- Updates the details of a specific player based on the player ID
+PUT http://127.0.0.1:5050/players/5/
+Content-Type: application/json
+
+{
+  "playerName": "Rajesh"
+}
+###
+// API 4 --- match details of a specific match
+GET http://127.0.0.1:5050/matches/16/
+###
+
+// API 5 --- list of all the matches of a player
+GET http://127.0.0.1:5050/players/1/matches
+###
+
+// API 6 --- Returns a list of players of a specific match
+GET http://127.0.0.1:5050/matches/9/players
+###
+
+// API 7 --- Returns the statistics of the total score, fours, sixes of a specific player based on the player ID
+GET http://127.0.0.1:5050/players/1/playerScores
+###
