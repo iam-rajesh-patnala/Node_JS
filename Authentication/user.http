@@ -1,0 +1,23 @@
+// API 1 Create a user
+
+
+POST http://localhost:5050/users/
+Content-Type: application/json
+
+{
+  "id" : 3,
+  "name" : "Wesly",
+  "email" : "wesly3031@gmail.com",
+  "gender" : "Male",
+  "city"  : "Kolkata",
+  "username" : "Wesly",
+  "password" : "Wesly@3031"
+}
+###
+POST http://localhost:5050/login/
+Content-Type: application/json
+
+{
+  "username" : "Preethi",
+  "password" : "Preethi@123"
+}

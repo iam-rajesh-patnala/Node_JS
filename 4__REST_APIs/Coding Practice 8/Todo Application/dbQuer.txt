@@ -1,6 +1,6 @@
 ------------- HOW TO CREATE A TABLE -------------
 
-CREATE TABLE todo (id NOT NULL PRIMARY KEY, todo TEXT, priority TEXT, status TEXT);
+CREATE TABLE todo (id INT NOT NULL PRIMARY KEY, todo TEXT, priority TEXT, status TEXT);
 
 ------------- HOW TO INSERT DATA INTO A TABLE -------------
 
