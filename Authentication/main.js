@@ -54,6 +54,7 @@ app.post('/users/', async (request, response) => {
   }
 })
 
+// API Login
 app.post('/login/', async (request, response) => {
   const {username, password} = request.body;
   const selectUserQuery = `SELECT * FROM users WHERE username = '${username}'`;
