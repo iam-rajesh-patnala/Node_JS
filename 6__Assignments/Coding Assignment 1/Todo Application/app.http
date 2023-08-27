@@ -42,7 +42,7 @@ POST http://127.0.0.1:5050/todos/
 Content-Type: application/json
 
 {
-  "id": 10,
+  "id": 5,
   "todo": "Finalize event theme",
   "priority": "LOW",
   "status": "TO DO",
@@ -64,4 +64,4 @@ Content-Type: application/json
 
 # Deletes a todo from the todo table based on the todo ID
 
-DELETE http://127.0.0.1:5050/todos/6
+DELETE http://127.0.0.1:5050/todos/10

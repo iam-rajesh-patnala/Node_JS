@@ -169,7 +169,6 @@ const checkBodyQuery = async (request, response, next) => {
       const formatedDate = format(dateObj, 'yyyy-MM-dd');
       const dateResult = toDate( new Date(formatedDate));
       const isValidDate = await isValid(dateResult);
-      console.log(isValidDate);
 
       if (isValidDate) {
         request.dueDate = formatedDate;
