@@ -1,0 +1,67 @@
+# API 1 --- Returns a list of all todos whose status is 'TO DO'
+GET http://127.0.0.1:5050/todos/?status=TO%20DO
+###
+
+GET http://localhost:5050/todos/?priority=HIGH
+###
+
+GET http://127.0.0.1:5050/todos/?priority=HIGH&status=IN%20PROGRESS
+###
+
+GET http://127.0.0.1:5050/todos/?search_q=Buy
+###
+
+GET http://127.0.0.1:5050/todos/?category=WORK&status=DONE
+###
+
+GET http://127.0.0.1:5050/todos/?category=HOME
+###
+
+GET http://127.0.0.1:5050/todos/?category=LEARNING&priority=HIGH
+###
+
+// API 2
+
+// Returns a specific todo based on the todo ID
+
+GET http://127.0.0.1:5050/todos/1
+###
+
+// API 3
+
+// Returns a list of all todos with a specific due date in the query parameter /agenda/?date=2021-12-12
+
+GET http://127.0.0.1:5050/agenda/?date=2020-09-22
+###
+
+// API 4
+
+# Create a todo in the todo table,
+
+POST http://127.0.0.1:5050/todos/
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-04-04"  
+}
+###
+
+// API 5
+
+# Updates the details of a specific todo based on the todo ID
+PUT http://127.0.0.1:5050/todos/1
+Content-Type: application/json
+
+{ "category": "WORK" }
+###
+
+// API 6
+
+# Deletes a todo from the todo table based on the todo ID
+
+DELETE http://127.0.0.1:5050/todos/6
