@@ -1,0 +1,75 @@
+
+// API 1 --- User Registration
+
+POST http://127.0.0.1:5050/register/
+Content-Type: application/json
+
+{
+  "username": "Kiran",
+  "password": "$Luc",
+  "name": "Kiran",
+  "gender": "male"
+}
+###
+
+// API 2 --- User Login
+
+POST http://127.0.0.1:5050/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+
+// API 3 --- Returns the latest tweets of people whom the user follows. Return 4 tweets at a time
+
+GET http://127.0.0.1:5050/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
+###
+
+// API 4 --- Returns the list of all names of people whom the user follows
+
+GET http://127.0.0.1:5050/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2Vj
+###
+
+// API 5 --- Returns the list of all names of people who follows the user
+GET http://127.0.0.1:5050/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
+###
+
+// API 6 --- 
+GET http://127.0.0.1:5050/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
+### 
+
+// API 7 ---
+GET http://127.0.0.1:5050/tweets/9/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
+###
+
+// API 8 ---
+GET http://127.0.0.1:5050/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
+###
+
+// API 9 --- 
+GET http://127.0.0.1:5050/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
+###
+
+// API 10 ---
+POST  http://127.0.0.1:5050/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
+Content-Type: application/json
+
+{
+  "tweet": "The Mornings..."
+}
+###
+
+// API 11 ---
+DELETE   http://127.0.0.1:5050/tweets/12/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJuYW1lIjoiSm9lIEJpZGVuIiwidXNlcm5hbWUiOiJKb2VCaWRlbiIsInBhc3N3b3JkIjoiJDJiJDEwJDJhcmU2QmE2OW9pL0NhaTRhVC9WTS50N0FPN1RzUXgvLk9nei43WEc0cWp1TWlsMHY4MGFxIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTY5MzIwMzYxMX0.Hyidm83Ad5ObB9cnFtRDgij8jp3PNOb27kVFdad2VjQ
